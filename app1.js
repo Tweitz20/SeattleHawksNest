@@ -1,5 +1,5 @@
 
- function askUserQuestion(){
+function askUserQuestion(){
     let userName = prompt('Enter you first name!');
 
     if(userName == 'victor'){
@@ -10,17 +10,19 @@
     return userName;
     // 'victor'
 }
-
-    let userNameOutside = askUserQuestion();
+    askUserQuestion();
 
 function fanQuestion(){
     let userAnswer = prompt('Do you want to be a true fan? (yes or no)')
     // console.log(userAnswer);
     if(userAnswer.toLowerCase() == "yes"){
-        document.write('But now you are a fan of a losing season :(')
+        document.write(' But now you are a fan of a losing season :(')
     }
-    console.log(userAnswer);
+    
 }
+    
+    fanQuestion();
+        ''
 
 function anotherPicQuestion(){
     let anotherPicture = prompt('Would you like to see a picture of DK Metcalf?');
@@ -31,6 +33,7 @@ function anotherPicQuestion(){
 
         document.write('<img src="' + picURL + '">')
     }
+
 }
 
-anotherPictureQuestion();
+    anotherPicQuestion();
